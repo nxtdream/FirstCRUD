@@ -1,0 +1,39 @@
+<%layout('layouts/boilerplate') %>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <h1 class="text-center">Login</h1>
+    <div class="col-6">
+      <form action="/login" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+          <label class="form-label" for="username">Username</label>
+          <input
+            class="form-control"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Please fill this</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="password">Password</label>
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Please fill this</div>
+        </div>
+        <div class="d-md-flex justify-content-md-center mb-3">
+          <button class="btn btn-success">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
